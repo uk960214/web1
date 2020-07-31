@@ -11,6 +11,22 @@
 		WEB
 		</a>	
 	</h1>
+	<div id="shiftColorTop">
+		<input type="button" value="night" onclick="
+			var target = document.querySelector('body');
+			if(this.value === 'night'){
+			target.style.backgroundColor = 'black';
+			target.style.color = 'white';
+			this.value = 'day';
+			}
+			else{
+			target.style.backgroundColor = 'white';
+			target.style.color = 'black';
+			this.value = 'night';
+			}
+	    ">
+	</div>
+	
 	<div id="grid">
 		<ol>
 		<li><a href="1.html">HTML</a></li>
@@ -24,6 +40,18 @@
 		</div>
 		
 	</div>
-
+	<input type="button" value="night" onclick="
+			var target = document.querySelector('body');
+			if(this.value === 'night'){
+			target.style.backgroundColor = 'black';
+			target.style.color = 'white';
+			this.value = 'day';
+			}
+			else{
+			target.style.backgroundColor = 'white';
+			target.style.color = 'black';
+			this.value = 'night';
+			}
+	">
 </body>
 </html>
