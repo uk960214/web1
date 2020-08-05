@@ -4,6 +4,8 @@
 	<title>Web1 - JavaScript</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="colors.js"></script>
 </head>
 <body>
 	<h1> 
@@ -11,6 +13,11 @@
 		WEB
 		</a>	
 	</h1>
+	<div id="shiftColorTop">
+		<input type="button" value="night" onclick="
+			nightDayHandler(this);
+	    ">
+	</div>
 	<div id="grid">
 		<ol>
 			<li><a href="1.html">HTML</a></li>

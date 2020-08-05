@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Object</h1>
+		<script>
+			var team = {
+				"leader":"Tom",
+				"member":"Jane"
+			}; //객체에 소속된 변수 = 프로퍼티
+			document.write("leader: "+team.leader+"<br>");
+			document.write("member: "+team.member+"<br>");
+			team.sponsor = "Kim";
+			document.write("sponsor: "+team.sponsor+"<br>");
+			team["team supporter"] = "Doug";
+			document.write("team supporter: "+team["team supporter"]+"<br>"); 
+		</script>
+		<h2>Iterate</h2>
+		<script> 
+			for(var key in team) {
+				document.write(key+': '+team[key]+'<br>');
+			}
+		</script>
+		<h2>Property and Method</h2>
+		<script>
+			team.showAll = function(){
+				for(var key in this) {
+				document.write(key+': '+this[key]+'<br>');
+				}
+			} //객체에 소속된 함수 = 메소드
+			team.showAll();
+		</script>
+	</body>
+</html>
